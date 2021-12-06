@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>webcomponents workshop</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.61/dist/themes/light.css">
+	<link rel="stylesheet" href="css/iphone.css" type="text/css">
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+</head>
+<body>
+	<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.61/dist/shoelace.js"></script>
+	<div class="device iphone8 black">
+		<div class="screen">
+			<div class="header">
+				<div class="header__logo">
+					<sl-icon name="tornado" style="font-size: 2rem"></sl-icon> Tornado Gimmicks
+				</div>
+				<div class="header__buttons">
+					<sl-button type="default" circle><sl-icon style="font-size: 1rem;"  name="cart2"></sl-icon></sl-button>
+					<sl-button type="default" circle><sl-icon style="font-size: 1rem;" name="list"></sl-icon></sl-button>
+				</div>
+			</div>
+			<div class="banner">
+				<!-- SUBHEADER -->
+				<sl-icon name="tree"></sl-icon>
+				<sl-relative-time date="2021-12-24T00:00:00-00:00" locale="de"></sl-relative-time> ist Weihnachten
+			</div>
+			<div class="content">
+				<sl-breadcrumb>
+					<sl-breadcrumb-item>Startseite</sl-breadcrumb-item>
+					<sl-breadcrumb-item href="index.html">Katalog</sl-breadcrumb-item>
+					<sl-breadcrumb-item>MacBook 16"</sl-breadcrumb-item>
+				</sl-breadcrumb>
+				<div class="product-header">
+						<sl-responsive-media>
+						<img src="https://static.giga.de/wp-content/uploads/2021/06/macbook_pro_2021_14_zoll_titel.jpg" alt="A train riding through autumn foliage with mountains in the distance.">
+					</sl-responsive-media>
+					<h1>MacBook Pro 2021 (16")</h1>
+				</div>
+
+				<sl-select>
+					<sl-menu-item value="option-1">Space grey</sl-menu-item>
+					<sl-menu-item value="option-2">Silver</sl-menu-item>
+				</sl-select>
+				
+				<sl-button type="primary"><sl-icon name="cart-plus"></sl-icon> 2649€</sl-button>
+				<sl-tab-group>
+					<sl-tab slot="nav" panel="description">Beschreibung</sl-tab>
+					<sl-tab slot="nav" panel="comparison">Vergleichen</sl-tab>
+
+					<sl-tab-panel name="description">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+					aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</sl-tab-panel>
+					<sl-tab-panel name="comparison">
+						<h2>16" vs. 14"</h2>
+						<sl-image-comparer>
+							<img slot="before" src="img/macbook-14.jpg" alt="Grayscale version of kittens in a basket looking around.">
+							<img slot="after" src="img/macbook-16.jpg" alt="MacBook 16">
+						</sl-image-comparer>
+
+						<h2>Akku 2021 vs. 2020</h2>
+						<sl-progress-bar value="100">10 hours (2021)</sl-progress-bar>
+						<br>
+						<sl-progress-bar value="70">7 hours (2020)</sl-progress-bar>
+					</sl-tab-panel>
+				</sl-tab-group>
+
+				
+
+				<sl-dialog label="Dialog" class="dialog-overview">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					<sl-button slot="footer" type="primary">Close</sl-button>
+				</sl-dialog>
+			</div>
+		</div>
+	</div>
+	<script>
+		const dialog = document.querySelector('.dialog-overview');
+		const openButton = dialog.nextElementSibling;
+		const closeButton = dialog.querySelector('sl-button[slot="footer"]');
+
+		openButton.addEventListener('click', () => dialog.show());
+		closeButton.addEventListener('click', () => dialog.hide());
+	</script>
+</body>
+</html>
