@@ -18,56 +18,58 @@
 					<sl-icon name="tornado" style="font-size: 2rem"></sl-icon> Tornado Gimmicks
 				</div>
 				<div class="header__buttons">
-					<sl-button type="default" circle><sl-icon style="font-size: 1rem;"  name="cart2"></sl-icon></sl-button>
-					<sl-button type="default" circle><sl-icon style="font-size: 1rem;" name="list"></sl-icon></sl-button>
+					<!--
+						Component: https://shoelace.style/components/button
+						Icon: cart2
+
+						Component: https://shoelace.style/components/button
+						Icon: list
+					-->
 				</div>
 			</div>
 			<div class="banner">
-				<!-- SUBHEADER -->
-				<sl-icon name="tree"></sl-icon>
-				<sl-relative-time date="2021-12-24T00:00:00-00:00" locale="de"></sl-relative-time> ist Weihnachten
+				<!--
+					Component: https://shoelace.style/components/icon
+					Icon: tree
+
+					Component: https://shoelace.style/components/relative-time
+					Content: In XX ist Weihnachten
+				-->
 			</div>
 			<div class="content">
-				<sl-breadcrumb>
-					<sl-breadcrumb-item>Startseite</sl-breadcrumb-item>
-					<sl-breadcrumb-item href="index.html">Katalog</sl-breadcrumb-item>
-					<sl-breadcrumb-item>MacBook 16"</sl-breadcrumb-item>
-				</sl-breadcrumb>
+				<!--
+					Component: https://shoelace.style/components/breadcrumb
+					Content: Startseite, Katalog, Macbook 16"
+				-->
+
 				<!--
 					Component: https://shoelace.style/components/responsive-media
-					Content: macbook.jpg
+					Image: macbook.jpg
 				-->
-				<sl-responsive-media>
-					<img src="img/macbook.jpg" alt="a macbook">
-				</sl-responsive-media>
+
 				<h1>MacBook Pro 2021 (16")</h1>
 
-				<sl-select>
-					<sl-menu-item value="option-1">Space grey</sl-menu-item>
-					<sl-menu-item value="option-2">Silver</sl-menu-item>
-				</sl-select>
-				
-				<sl-button type="primary"><sl-icon name="cart-plus"></sl-icon> 2649€</sl-button>
-				<sl-tab-group>
-					<sl-tab slot="nav" panel="description">Beschreibung</sl-tab>
-					<sl-tab slot="nav" panel="comparison">Vergleichen</sl-tab>
+				<!--
+					Component: https://shoelace.style/components/select
+					Content: Space grey, Silver
+				-->
 
-					<sl-tab-panel name="description">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-					aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</sl-tab-panel>
-					<sl-tab-panel name="comparison">
-						<h2>16" vs. 14"</h2>
-						<sl-image-comparer>
-							<img slot="before" src="img/macbook-14.jpg" alt="Grayscale version of kittens in a basket looking around.">
-							<img slot="after" src="img/macbook-16.jpg" alt="MacBook 16">
-						</sl-image-comparer>
+				<!--
+					Component: https://shoelace.style/components/button
+					Icon: cart-plus
+					Content: 2649€
+				-->
 
-						<h2>Akku 2021 vs. 2020</h2>
-						<sl-progress-bar value="100">10 hours (2021)</sl-progress-bar>
-						<br>
-						<sl-progress-bar value="70">7 hours (2020)</sl-progress-bar>
-					</sl-tab-panel>
-				</sl-tab-group>
+				<!--
+					Component: https://shoelace.style/components/tab-group
+					Content: Beschreibung, Vergleichen
+
+					Component: https://shoelace.style/components/image-comparer
+					Images: macbook-14.jpg, macbook-16.jpg
+
+					Component: https://shoelace.style/components/progress-bar
+					Content: 10 hours (2021), 7 hours (2020)
+				-->
 			</div>
 		</div>
 	</div>
