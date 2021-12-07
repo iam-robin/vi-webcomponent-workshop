@@ -21,69 +21,50 @@
 					<sl-icon name="tornado" style="font-size: 2rem"></sl-icon> Tornado Gimmicks
 				</div>
 				<div class="header__buttons">
-					<sl-button type="default" circle>
-						<sl-icon style="font-size: 1rem;" name="cart2"></sl-icon>
-					</sl-button>
-					<sl-button type="default" circle>
-						<sl-icon style="font-size: 1rem;" name="list"></sl-icon>
-					</sl-button>
+					<!--
+						Component: https://shoelace.style/components/button
+						Icon: cart2
+
+						Component: https://shoelace.style/components/button
+						Icon: list
+					-->
 				</div>
 			</div>
 			<div class="banner">
-				<!-- SUBHEADER -->
-				<sl-icon name="tree"></sl-icon>
-				<sl-relative-time date="2021-12-24T00:00:00-00:00" locale="de"></sl-relative-time> ist Weihnachten
+				<!--
+					Component: https://shoelace.style/components/icon
+					Icon: tree
+
+					Component: https://shoelace.style/components/relative-time
+					Content: In XX ist Weihnachten
+				-->
 			</div>
 			<div class="content">
-				<sl-breadcrumb>
-					<sl-breadcrumb-item>Startseite</sl-breadcrumb-item>
-					<sl-breadcrumb-item>Katalog</sl-breadcrumb-item>
-				</sl-breadcrumb>
-				<sl-card class="card-overview">
-					<img slot="image"
-						src="img/macbook.jpg"
-						alt="example alt text">
-					<strong>MacBook Pro 2021 (16")</strong><br>
-					<small>2649€</small>
-					<sl-badge type="success" pill pulse>Sonderangebot</sl-badge>
-					<div slot="footer">
-						<sl-button type="primary" pill href="macbook-pro-2021.html" target="_self">
-							Zum Produkt
-							<sl-icon name="arrow-right-short"></sl-icon>
-						</sl-button>
-						<sl-rating readonly precision="0.5" value="4.5"></sl-rating>
-					</div>
-				</sl-card>
-				<sl-card class="card-overview">
-					<img slot="image"
-						src="img/camera.jpg"
-						alt="example alt text">
-					<strong>Retro-Kamera</strong><br>
-					<small>69,99€</small>
-					<sl-badge type="warning" pill>Ausverkauft</sl-badge>
+				<!--
+					Component: https://shoelace.style/components/breadcrumb
+					Content: Startseite, Katalog
+				-->
 
-					<div slot="footer">
-						<sl-button type="neutral" disabled pill>
-							Zum Produkt
-							<sl-icon name="arrow-right-short"></sl-icon>
-						</sl-button>
-						<sl-rating readonly precision="0.5" value="3"></sl-rating>
-					</div>
-				</sl-card>
-				<sl-card class="card-overview">
-					<img slot="image"
-						src="img/gopro.jpg"
-						alt="example alt text">
-					<strong>GoPro 2</strong><br>
-					<small>269€</small>
-					<div slot="footer">
-						<sl-button type="primary" pill>
-							Zum Produkt
-							<sl-icon name="arrow-right-short"></sl-icon>
-						</sl-button>
-						<sl-rating readonly precision="0.5" value="4"></sl-rating>
-					</div>
-				</sl-card>
+				<!--
+					Component: https://shoelace.style/components/card
+					Image: macbook.jpg
+					Content: MacBook Pro 2021 (16"), 2649€, Sonderangebot
+					Rating: 4,5
+				-->
+
+				<!--
+					Component: https://shoelace.style/components/card
+					Image: camera.jpg
+					Content: Retro-Kamera, 69,99€, Ausverkauft
+					Rating: 3
+				-->
+
+				<!--
+					Component: https://shoelace.style/components/card
+					Image: gopro.jpg
+					Content: GoPro 2, 269€
+					Rating: 4
+				-->
 			</div>
 		</div>
 	</div>
