@@ -44,14 +44,10 @@ body{
 
 .banner{
   padding: var(--sl-spacing-x-small) var(--sl-spacing-medium);
-  background: var(--sl-color-red-800);
+  background: var(--sl-color-success-500);
   color: white;
 }
 /* component styles */
-
-.product-header{
-  background-color: var(--sl-color-blue-10s0)
-}
 
 .card-overview small {
   color: var(--sl-color-neutral-500);
@@ -66,4 +62,12 @@ body{
 .card-overview [slot="header"]{
   font-weight: bold;
   font-size: 1.5rem;
+}
+
+.card-overview strong,
+.card-overview h1,
+.card-overview h2,
+.card-overview h3 {
+  display: inline-block;
+  margin-bottom: 8px;
 }
