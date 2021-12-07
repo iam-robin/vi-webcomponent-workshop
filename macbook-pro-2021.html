@@ -68,23 +68,8 @@
 						<sl-progress-bar value="70">7 hours (2020)</sl-progress-bar>
 					</sl-tab-panel>
 				</sl-tab-group>
-
-				
-
-				<sl-dialog label="Dialog" class="dialog-overview">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					<sl-button slot="footer" type="primary">Close</sl-button>
-				</sl-dialog>
 			</div>
 		</div>
 	</div>
-	<script>
-		const dialog = document.querySelector('.dialog-overview');
-		const openButton = dialog.nextElementSibling;
-		const closeButton = dialog.querySelector('sl-button[slot="footer"]');
-
-		openButton.addEventListener('click', () => dialog.show());
-		closeButton.addEventListener('click', () => dialog.hide());
-	</script>
 </body>
 </html>
